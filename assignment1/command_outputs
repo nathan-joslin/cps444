@@ -1,0 +1,40 @@
+Nathan Joslin
+CPS 444 Unix/Linux Programming
+Dr. Kyle Tarplee
+Spring 2023
+
+7. Command: curl https://github.com/nathan-joslin.keys
+	//Note: The second key is the public key created for this assignment.
+	Output: 
+
+	ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBxjud3rfD/HwxQCcF1lwiCeLv6ThWLHRWMm1QrNnRLu
+	ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPmKmyGMSy5JglsyBMae8MqEVGdR2wny3sDM/HjEh3Za
+
+8. Command: lsb_release -a
+	Output:
+
+	No LSB modules are available.
+	Distributor ID:	Ubuntu
+	Description:	Ubuntu 22.04.1 LTS
+	Release:	22.04
+	Codename:	jammy
+
+9. Command: uname -a
+	Output: 
+
+	inux joslinn1-VirtualBox 5.15.0-57-generic #63-Ubuntu SMP Thu Nov 24 13:43:17 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+
+10. Same commands ran on Google Cloud Shell:
+	Command: lsb_release -a
+	Output: 
+
+	No LSB modules are available.
+	Distributor ID: Debian
+	Description:    Debian GNU/Linux 11 (bullseye)
+	Release:        11
+	Codename:       bullseye
+
+	Command: uname -a
+	Output: 
+
+	Linux cs-384535797998-default 5.15.65+ #1 SMP Fri Dec 30 10:10:30 UTC 2022 x86_64 GNU/Linux

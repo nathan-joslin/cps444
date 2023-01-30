@@ -1,0 +1,15 @@
+Nathan Joslin
+CPS 444 - Unix/Linux Programming
+Dr. Kyle Tarplee
+Sprint 2023
+
+8. Question: Run "lsb_release -a"
+	Answer: I recognize the Ubuntu operating system as well as its version as being the OS I installed to setup the VM.
+
+9. Question: Run "uname -a"
+	Answer: The "uname" command provides system information. This command shows us all system information as it uses the "-a" flag. According to the manual, we are given the name of the kernel, network node hostname, kernel release, kernel version, hardware name, processor type, hardware platform, and operating system.
+
+10. Question: Run the same commands on Google Cloud Shell, are they the same?
+	Answer: 
+		- "lsb_release -a" : The output is different. It appears that Google Cloud Shell uses a different operating system than our VM. 
+		- "uname -a" : This command does the same, however results in a different output as the operating system is different.

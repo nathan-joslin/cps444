@@ -1,0 +1,134 @@
+cd ..
+clear
+ls
+pwd
+clear
+go version
+ls
+cd ..
+ls
+cd joslinn1/
+ls
+subl version
+sudo snap install sublime-text
+clear
+ls
+ls -la
+nano .profile
+source $HOME/.profile
+go version
+tar -C/usr/local -xzf go1.19.5.linuxamd64.tar.gz
+clear
+ls
+sudo rm -rf /usr/local/go
+sudo tar -C /usr/local -xzf go1.19.5.linux-amd64.tar.gz
+go version
+apt install go
+sudo apt install go
+snap install go
+snap install go --classic
+go version
+subl version
+snap install sublime-text
+snap install sublime-text --classic
+subl version
+subl -v
+ls
+apt install tree
+snap install tree
+tree
+ls
+mkdir cps444
+ls
+cd cps444/
+subl HelloWorld.go
+ls
+go run HelloWorld.go 
+s
+ls
+cp HelloWorld.go PrintName.go
+ls
+subl PrintName.go 
+go PrintName.go 
+go run PrintName.go 
+man ssh-keygen
+ssh-keygen -t ed25519 -C "joslinn1@udayton.edu"
+eval "#(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+clip < ~/.ssh/id_ed25519.pub
+cd ..
+ls
+cd .ssh
+ls
+subl id_ed25519.pub
+curl https://github.com/nathan-joslin.keys
+snap install curl
+curl https://github.com/nathan-joslin.keys
+clear
+cd .
+cd ..
+clear
+cd .ssh
+ls
+nano id_ed25519
+clear
+cd ..
+clear
+ls
+ls -la
+man find
+find .bash
+.bash*
+~/.bash_history
+cd ~
+ls
+ls -la
+subl ~/.bash_history
+cd home
+cd ..
+ls
+ls -la
+cd ..
+ls
+cd ~
+ls
+ls -la
+la -a
+clear
+ls -la
+history -w
+ls -la
+subl ./bash_history
+sudo nano .bash_history
+clear
+subl .bash_hisory
+subl .bash_history
+ls -la
+cp .bash_history Assignment1_bash_history
+ls
+mv Assignment1_bash_history cps444/
+ls
+cd cps444/
+ls
+clear
+ls
+mkdir assignment1
+ls
+mv Assignment1_bash_history assignment1/
+ls
+mv HelloWorld.go assignment1/
+mv PrintName.go assignment1/
+ls
+cd assignment1/
+ls
+subl assignment1_questions
+cd ~
+ls
+lsb_relase -a
+lsb_release -a
+uname -a
+man uname
+curl
+ls -la
+nano .bash_history 
+history -w
