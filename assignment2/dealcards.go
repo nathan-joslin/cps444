@@ -192,7 +192,7 @@ func randCard() string {
 	return getCard(strconv.Itoa(rand.Intn(13) + 2)) //2 is the smallest card
 }
 
-// getCard returns the ASCII card, given its letter representation {[2-10],J,Q,K,A,r} as a string
+// getCard returns the ASCII card, given its letter representation {[2-10],J,Q,K,A,r}
 func getCard(arg string) string {
 	var thisCard = ""
 	switch arg {
