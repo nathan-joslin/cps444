@@ -80,9 +80,9 @@ func calcWindChill(temp, windSpeed float64) float64 {
 func createTable() [13][19]float64 {
 	var wcTable [13][19]float64
 
-	windChill := 0.0
+	windChill := 0.0          // never resets, we only go through the rows once
 	for i := 0; i < 13; i++ { // row number
-		temp := 45.0
+		temp := 45.0              // resets every row
 		for j := 0; j < 19; j++ { // column number
 			// temp axis labels
 			if i == 0 && j > 0 {
@@ -92,15 +92,13 @@ func createTable() [13][19]float64 {
 			if i > 0 && j == 0 {
 				wcTable[i][j] = windChill
 			}
-			// not an axis label
+			// the calculated table values
 			if i > 0 && j > 0 {
 				wcTable[i][j] = calcWindChill(float64(temp), float64(windChill))
 			}
-			// next column, iterate temp
-			temp -= 5
+			temp -= 5 // next column, iterate temp
 		}
-		// next row, iterate wind speed
-		windChill += 5
+		windChill += 5 // next row, iterate wind speed
 	}
 	return wcTable
 }
@@ -111,7 +109,7 @@ func displayTable() {
 	fmt.Printf("X-Axis (first row): Temperature (%s)\n", degreeF)
 	fmt.Printf("Y-Axis (first column): Wind Speed (mph)\n\n")
 
-	table := createTable()
+	table := createTable() // gotta make the table before displaying...
 
 	// begin displaying the table item by item
 	for i := 0; i < 13; i++ {
@@ -128,7 +126,6 @@ func displayTable() {
 			// not an axis label
 			fmt.Printf(" %5.1f ", table[i][j])
 		}
-		// new row
-		fmt.Println()
+		fmt.Println() // new row
 	}
 }
